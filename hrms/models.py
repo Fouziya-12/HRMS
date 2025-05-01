@@ -169,6 +169,7 @@ class Resource(models.Model):
     def _str_(self):
         return f"{self.resource_name} ({self.resource_type}) - {self.resource_id}"
     
+     
 #17. RESOURCEALLOCATION TABLE
 class ResourceAllocation(models.Model): 
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
